@@ -80,11 +80,6 @@ replace "blueharvest-bluedev" ${TEAM_NAME} "./Dockerfile"
 replace "com.blueharvest.bluedev.bedrocksb.BedrockSbApplication" "${MAIN_PACKAGE_PATH}.${MAIN_CLASS_NAME}" "./Dockerfile"
 echo
 
-echo '[INFO] Customizing .gitlab-ci.yml'
-replace "blueharvest" ${TEAM_NAME} "./.gitlab-ci.yml"
-replace "bedrock-service" ${SERVICE_NAME} "./.gitlab-ci.yml"
-echo
-
 echo '[INFO] Customizing ./src/main/resources/logback-spring.xml'
 replace "com.blueharvest.bluedev.bedrocksb" ${MAIN_PACKAGE_PATH} "./src/main/resources/logback-spring.xml"
 echo
