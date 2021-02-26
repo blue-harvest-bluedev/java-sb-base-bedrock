@@ -12,7 +12,7 @@ echo
 
 echo 'First of all, please provide your company name.'
 echo 'Make sure it'"'"'s all lowercase and separated by dash (\"-\") characters. The default is (blueharvest)'
-read COMPANY_NAME
+read -p "Company Name: " COMPANY_NAME
 if [[ -z COMPANY_NAME ]]; then
   COMPANY_NAME="blueharvest"
 fi
@@ -21,7 +21,7 @@ echo
 
 echo 'Please provide your team name.'
 echo 'Make sure it'"'"'s all lowercase and separated by dash (\"-\") characters. The default is (bluedev)'
-read TEAM_NAME
+read -p "Team Name: " TEAM_NAME
 if [[ -z $TEAM_NAME ]]; then
   TEAM_NAME="bluedev"
 fi
@@ -30,7 +30,7 @@ echo
 
 echo 'Please provide the name of this (micro)service.'
 echo 'Make sure it'"'"'s the all lowercase and separated by dash (\"-\") characters. The default is (bedrocksb)'
-read SERVICE_NAME
+read -p "Service Name: " SERVICE_NAME
 if [[ -z $SERVICE_NAME ]]; then
   SERVICE_NAME="bedrocksb"
 fi
@@ -39,7 +39,7 @@ echo
 
 echo 'Alright, ready for the next one?. Please provide the name of your main class'
 echo 'Make sure it'"'"'s Capital Case and doesn'"'"'t contain any special characters or numbers. The default is (BedrockSbApplication)'
-read MAIN_CLASS_NAME
+read -p "Main Class Name: " MAIN_CLASS_NAME
 if [[ -z MAIN_CLASS_NAME ]]; then
   MAIN_CLASS_NAME="BedrockSbApplication"
 fi

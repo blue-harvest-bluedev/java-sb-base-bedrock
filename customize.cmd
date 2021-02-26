@@ -43,7 +43,7 @@ IF "%SERVICE_NAME%"=="" (
 @echo Alright, ready for the next one?. Please provide the name of your main class.
 @echo Make sure it's Capital Case and doesn't contain any special characters or numbers. The default is (BedrockSbApplication)
 @echo off
-set /p MAIN_CLASS_NAME="Service name: "
+set /p MAIN_CLASS_NAME="Main Class Name: "
 IF "%MAIN_CLASS_NAME%"=="" (
     set MAIN_CLASS_NAME=BedrockSbApplication
 )
