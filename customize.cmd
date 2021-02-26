@@ -59,7 +59,7 @@ IF "%MAIN_CLASS_NAME%"=="" (
 set COMPANY_NAME_WITHOUT_DASH=%COMPANY_NAME:-=%
 set TEAM_NAME_WITHOUT_DASH=%TEAM_NAME:-=%
 set SERVICE_NAME_WITHOUT_DASH=%SERVICE_NAME:-=%
-set MAIN_PACKAGE_PATH=com.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH%.%SERVICE_NAME_WITHOUT_DASH%"
+set MAIN_PACKAGE_PATH=com.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH%.%SERVICE_NAME_WITHOUT_DASH%
 
 @echo [INFO] Customizing pom.xml
 CALL :replace com.blueharvest.bluedev om.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH% pom.xml
@@ -74,7 +74,7 @@ CALL :replace com.blueharvest.bluedev.bedrocksb.BedrockSbApplication %MAIN_PACKA
 @echo.
 
 @echo [INFO] Customizing .\src\main\resources\logback-spring.xml
-CALL :replace com.blueharvest.bluedev.bedrocksb %MAIN_PACKAGE_PATH% .src\main\resources\logback-spring.xml
+CALL :replace com.blueharvest.bluedev.bedrocksb %MAIN_PACKAGE_PATH% .\src\main\resources\logback-spring.xml
 @echo.
 
 @echo [INFO] Refactoring the project packages and directories
