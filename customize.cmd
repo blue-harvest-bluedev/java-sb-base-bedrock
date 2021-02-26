@@ -62,7 +62,7 @@ set SERVICE_NAME_WITHOUT_DASH=%SERVICE_NAME:-=%
 set MAIN_PACKAGE_PATH=com.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH%.%SERVICE_NAME_WITHOUT_DASH%
 
 @echo [INFO] Customizing pom.xml
-CALL :replace com.blueharvest.bluedev om.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH% pom.xml
+CALL :replace com.blueharvest.bluedev com.%COMPANY_NAME_WITHOUT_DASH%.%TEAM_NAME_WITHOUT_DASH% pom.xml
 CALL :replace blueharvest %COMPANY_NAME% pom.xml
 CALL :replace bluedev %TEAM_NAME% pom.xml
 CALL :replace bedrocksb %SERVICE_NAME% pom.xml
